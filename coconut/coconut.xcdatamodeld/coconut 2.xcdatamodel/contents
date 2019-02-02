@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D38a" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="APIDisplay" representedClassName="APIDisplay" syncable="YES">
+        <attribute name="change24h" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="changeDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="changePCT24h" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="changePCTDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fromSymbol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="high24h" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastMarket" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastTradeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUpdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastVolume" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastVolumeTo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="low24h" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="market" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="open24h" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toSymbol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="volume24h" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="volume24hTo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toRoot" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIRoot" inverseName="toDisplay" inverseEntity="APIRoot" syncable="YES"/>
+    </entity>
+    <entity name="APIPrices" representedClassName="APIPrices" syncable="YES">
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="bcc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BCC" inverseName="apiPrices" inverseEntity="BCC" syncable="YES"/>
+        <relationship name="btc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BTC" inverseName="apiPrices" inverseEntity="BTC" syncable="YES"/>
+        <relationship name="dash" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DASH" inverseName="apiPrices" inverseEntity="DASH" syncable="YES"/>
+        <relationship name="doge" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DOGE" inverseName="apiPrices" inverseEntity="DOGE" syncable="YES"/>
+        <relationship name="eos" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EOS" inverseName="apiPrices" inverseEntity="EOS" syncable="YES"/>
+        <relationship name="etc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ETC" inverseName="apiPrices" inverseEntity="ETC" syncable="YES"/>
+        <relationship name="eth" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ETH" inverseName="apiPrices" inverseEntity="ETH" syncable="YES"/>
+        <relationship name="ltc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LTC" inverseName="apiPrices" inverseEntity="LTC" syncable="YES"/>
+        <relationship name="neo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NEO" inverseName="apiPrices" inverseEntity="NEO" syncable="YES"/>
+        <relationship name="trx" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TRX" inverseName="apiPrices" inverseEntity="TRX" syncable="YES"/>
+        <relationship name="xrp" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="XRP" inverseName="apiPrices" inverseEntity="XRP" syncable="YES"/>
+        <relationship name="zec" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ZEC" inverseName="apiPrices" inverseEntity="ZEC" syncable="YES"/>
+    </entity>
+    <entity name="APIRaw" representedClassName="APIRaw" syncable="YES">
+        <attribute name="change24h" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="changeDay" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="changePCT24h" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="changePCTDay" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="flags" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fromSymbol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="high24h" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastMarket" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastTradeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUpdate" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastVolume" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastVolumeTo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="low24h" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="market" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="open24h" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="toSymbol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="volume24h" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="volume24hTo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIRoot" inverseName="toRaw" inverseEntity="APIRoot" syncable="YES"/>
+    </entity>
+    <entity name="APIRoot" representedClassName="APIRoot" syncable="YES">
+        <relationship name="toDisplay" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIDisplay" inverseName="toRoot" inverseEntity="APIDisplay" syncable="YES"/>
+        <relationship name="toRaw" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIRaw" inverseName="newRelationship" inverseEntity="APIRaw" syncable="YES"/>
+    </entity>
+    <entity name="BCC" representedClassName="BCC" syncable="YES">
+        <attribute name="brl" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cny" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eur" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gbp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" defaultValueString="BCC" syncable="YES"/>
+        <attribute name="usd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="apiPrices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIPrices" inverseName="bcc" inverseEntity="APIPrices" syncable="YES"/>
+    </entity>
+    <entity name="BTC" representedClassName="BTC" syncable="YES">
+        <attribute name="brl" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cny" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eur" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gbp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" defaultValueString="BTC" syncable="YES"/>
+        <attribute name="usd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="apiPrices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIPrices" inverseName="btc" inverseEntity="APIPrices" syncable="YES"/>
+    </entity>
+    <entity name="DASH" representedClassName="DASH" syncable="YES">
+        <attribute name="brl" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cny" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eur" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gbp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" defaultValueString="Dash" syncable="YES"/>
+        <attribute name="usd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="apiPrices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIPrices" inverseName="dash" inverseEntity="APIPrices" syncable="YES"/>
+    </entity>
+    <entity name="DOGE" representedClassName="DOGE" syncable="YES">
+        <attribute name="brl" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cny" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eur" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gbp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" defaultValueString="Doge" syncable="YES"/>
+        <attribute name="usd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="apiPrices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIPrices" inverseName="doge" inverseEntity="APIPrices" syncable="YES"/>
+    </entity>
+    <entity name="EOS" representedClassName="EOS" syncable="YES">
+        <attribute name="brl" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cny" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eur" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gbp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" defaultValueString="Eosio" syncable="YES"/>
+        <attribute name="usd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="apiPrices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIPrices" inverseName="eos" inverseEntity="APIPrices" syncable="YES"/>
+    </entity>
+    <entity name="ETC" representedClassName="ETC" syncable="YES">
+        <attribute name="brl" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cny" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eur" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gbp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" defaultValueString="ETC" syncable="YES"/>
+        <attribute name="usd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="apiPrices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIPrices" inverseName="etc" inverseEntity="APIPrices" syncable="YES"/>
+    </entity>
+    <entity name="ETH" representedClassName="ETH" syncable="YES">
+        <attribute name="brl" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cny" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eur" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gbp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" defaultValueString="ETH" syncable="YES"/>
+        <attribute name="usd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="apiPrices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIPrices" inverseName="eth" inverseEntity="APIPrices" syncable="YES"/>
+    </entity>
+    <entity name="LTC" representedClassName="LTC" syncable="YES">
+        <attribute name="brl" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cny" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eur" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gbp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" defaultValueString="LTC" syncable="YES"/>
+        <attribute name="usd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="apiPrices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIPrices" inverseName="ltc" inverseEntity="APIPrices" syncable="YES"/>
+    </entity>
+    <entity name="NEO" representedClassName="NEO" syncable="YES">
+        <attribute name="brl" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cny" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eur" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gbp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" defaultValueString="NEO" syncable="YES"/>
+        <attribute name="usd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="apiPrices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIPrices" inverseName="neo" inverseEntity="APIPrices" syncable="YES"/>
+    </entity>
+    <entity name="Portifolio" representedClassName="Portifolio" syncable="YES" codeGenerationType="category">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="portifolioList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PortifolioList" inverseName="portifolio" inverseEntity="PortifolioList" syncable="YES"/>
+    </entity>
+    <entity name="PortifolioList" representedClassName="PortifolioList" syncable="YES" codeGenerationType="category">
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="portifolio" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Portifolio" inverseName="portifolioList" inverseEntity="Portifolio" syncable="YES"/>
+    </entity>
+    <entity name="TRX" representedClassName="TRX" syncable="YES">
+        <attribute name="brl" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cny" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eur" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gbp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" defaultValueString="TRX" syncable="YES"/>
+        <attribute name="usd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="apiPrices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIPrices" inverseName="trx" inverseEntity="APIPrices" syncable="YES"/>
+    </entity>
+    <entity name="XRP" representedClassName="XRP" syncable="YES">
+        <attribute name="brl" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cny" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eur" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gbp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" defaultValueString="XRP" syncable="YES"/>
+        <attribute name="usd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="apiPrices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIPrices" inverseName="xrp" inverseEntity="APIPrices" syncable="YES"/>
+    </entity>
+    <entity name="ZEC" representedClassName="ZEC" syncable="YES">
+        <attribute name="brl" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cny" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="eur" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gbp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" defaultValueString="ZEC" syncable="YES"/>
+        <attribute name="usd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="apiPrices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="APIPrices" inverseName="zec" inverseEntity="APIPrices" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="APIDisplay" positionX="-832.15234375" positionY="109.50390625" width="128" height="345"/>
+        <element name="APIRaw" positionX="-544.60546875" positionY="96.3125" width="128" height="360"/>
+        <element name="APIRoot" positionX="-684.68359375" positionY="-9.7109375" width="128" height="73"/>
+        <element name="Portifolio" positionX="-350.87109375" positionY="118.09375" width="128" height="178"/>
+        <element name="PortifolioList" positionX="-351.0234375" positionY="-6.50390625" width="128" height="90"/>
+        <element name="APIPrices" positionX="-1224.609375" positionY="196.86328125" width="128" height="238"/>
+        <element name="BTC" positionX="-1043.4765625" positionY="-214.30859375" width="128" height="148"/>
+        <element name="DASH" positionX="-1047.69140625" positionY="-35.74609375" width="128" height="148"/>
+        <element name="ETH" positionX="-1048.98828125" positionY="280.05859375" width="128" height="148"/>
+        <element name="LTC" positionX="-1048.24609375" positionY="441.5703125" width="128" height="148"/>
+        <element name="DOGE" positionX="-1049.5078125" positionY="119.30078125" width="128" height="148"/>
+        <element name="XRP" positionX="-1046.17578125" positionY="606.1640625" width="128" height="148"/>
+        <element name="ZEC" positionX="-1046.5625" positionY="766.73046875" width="128" height="148"/>
+        <element name="EOS" positionX="-1418.0546875" positionY="239.25390625" width="128" height="148"/>
+        <element name="TRX" positionX="-1417.30078125" positionY="574.77734375" width="128" height="150"/>
+        <element name="ETC" positionX="-1417.7734375" positionY="76.1328125" width="128" height="148"/>
+        <element name="BCC" positionX="-1421.578125" positionY="-107.09765625" width="128" height="150"/>
+        <element name="NEO" positionX="-1417.27734375" positionY="408.0546875" width="128" height="150"/>
+    </elements>
+</model>

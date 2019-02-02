@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D38a" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Portifolio" representedClassName="Portifolio" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="coin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fee" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="portifolioList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PortifolioList" inverseName="portifolios" inverseEntity="PortifolioList" syncable="YES"/>
+    </entity>
+    <entity name="PortifolioList" representedClassName="PortifolioList" syncable="YES" codeGenerationType="class">
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="portifolios" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Portifolio" inverseName="portifolioList" inverseEntity="Portifolio" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Portifolio" positionX="-45" positionY="27" width="128" height="178"/>
+        <element name="PortifolioList" positionX="-200.671875" positionY="73.1171875" width="128" height="88"/>
+    </elements>
+</model>
