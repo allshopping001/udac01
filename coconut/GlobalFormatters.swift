@@ -38,6 +38,7 @@ extension NumberFormatter{
     var formatWithSeparation: NumberFormatter {
         let formatter = NumberFormatter()
         formatter.maximumFractionDigits = 2
+        formatter.minimumFractionDigits = 2
         return formatter
     }
 }

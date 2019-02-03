@@ -66,7 +66,7 @@ class PortifolioDetailTableViewController: UITableViewController {
         cell.setCell = aPortifolio
         
         if let calc = calcPercent(coin: aPortifolio.coin!, amount: aPortifolio.amount, total: aPortifolio.total, currency: (aPortifolio.currency?.lowercased())!){
-            cell.differenceLabel.text = String(calc[0].currencyFormatString)
+            cell.differenceLabel.text = String(calc[0].decimalFormatString) 
             cell.percentLabel.text = String(calc[1].decimalFormatString) + "%"
             
             if calc[0] > 0 {
